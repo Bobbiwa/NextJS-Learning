@@ -5,7 +5,7 @@ import Link from 'next/link';
 export default function Page({ data }: any) {
   return (
     <div>
-      <h1>List Page</h1>
+      <h1>SSG Page</h1>
       {data.products.map((cur: any) => (
         <li key={cur.id}>
           <Link href={'/lists/' + cur.id}>{cur.title}</Link>
